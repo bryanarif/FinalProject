@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".HalamanUser">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/illustration2"
+                    tools:ignore="ContentDescription">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Username"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Id"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:orientation="horizontal"
+            android:padding="@dimen/fab_margin">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="124dp"
+                android:layout_height="134dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/fab_margin"
+                app:cardElevation="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jadwal Event"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageButton
+                        android:id="@+id/cek_jadwal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_list" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--End-->
+
+            <!--Presensi-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="124dp"
+                android:layout_height="134dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/fab_margin"
+                app:cardElevation="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Presensi"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/btn_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_presensi" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--End-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bagus Visual</string>
+    <string name="logout">logout</string>
+    <string name="rate_app">rate</string>
+    <string name="action_logout">Logout</string>
+</resources>

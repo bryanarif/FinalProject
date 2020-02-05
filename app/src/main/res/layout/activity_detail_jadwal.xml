@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@drawable/basecard"
+            android:padding="20dp">
+
+        <!--Tanggal-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                android:padding="@dimen/fab_margin"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal"
+                        android:textColor="@color/background_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detailtanggal"
+                        android:layout_width="264dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_toRightOf="@id/tvdetail"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        tools:text="Selasa, 29 Februari 2020" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--End-->
+
+        <!--Jam-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                android:padding="@dimen/fab_margin"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvdetail2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jam"
+                        android:textColor="@color/background_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detailjam"
+                        android:layout_width="261dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="81dp"
+                        android:layout_toRightOf="@id/tvdetail2"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        tools:text="10.30 WIB - Selesai" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--End-->
+
+        <!--Lokasi-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                android:padding="@dimen/fab_margin"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvdetail3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi"
+                        android:textColor="@color/background_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detaillokasi"
+                        android:layout_width="254dp"
+                        android:layout_height="47dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_toRightOf="@id/tvdetail3"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        tools:text="Jl.Anggajaya 2 No.82, Sanggrahan, Condong Catur, Depok, Sleman, YK" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--End-->
+
+        <!--Atas Nama-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                android:padding="@dimen/fab_margin"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvdetail4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atas Nama"
+                        android:textColor="@color/background_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detailAtasNama"
+                        android:layout_width="255dp"
+                        android:layout_height="47dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/tvdetail4"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        tools:text="Bpk.Winarto" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--End-->
+
+        <!--Acara-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                android:padding="@dimen/fab_margin"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvdetail5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acara"
+                        android:textColor="@color/background_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detailAcara"
+                        android:layout_width="202dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="67dp"
+                        android:layout_toRightOf="@id/tvdetail5"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        tools:text="Pernikahan Lussy dan Andi" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--End-->
+
+
+        <!--Team-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:elevation="5dp"
+                android:padding="@dimen/fab_margin"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvdetail6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team"
+                        android:textColor="@color/background_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detailteam"
+                        android:layout_width="202dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="67dp"
+                        android:layout_toRightOf="@id/tvdetail6"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        tools:text="Bryan, Wina, Yunita" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <!--End-->
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

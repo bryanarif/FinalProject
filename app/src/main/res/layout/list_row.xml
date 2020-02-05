@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="26dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@color/grey2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="364dp"
+            android:layout_height="346dp"
+            android:elevation="5dp"
+            android:background="@drawable/basecard"
+            android:padding="@dimen/fab_margin"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:id="@+id/item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--ID-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_toRightOf="@id/tvid"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+
+                <!--Tanggal-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvtanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tanggal"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="31dp"
+                        android:layout_toRightOf="@id/tvtanggal"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+
+                <!--Alamat-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvalamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/alamat"
+                        android:layout_width="231dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="37dp"
+                        android:layout_toRightOf="@id/tvalamat"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+
+                <!--Jam-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvjam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jam"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/jam"
+                        android:layout_width="233dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_toRightOf="@id/tvjam"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+
+                <!--Atas Nama-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvatasnama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atas Nama"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/atasnama"
+                        android:layout_width="232dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tvatasnama"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+
+                <!--Acara-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvacara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acara"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/acara"
+                        android:layout_width="232dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_toRightOf="@id/tvacara"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+
+                <!--Team-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvteam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team"
+                        android:textColor="@color/background_blue"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/team"
+                        android:layout_width="233dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_toRightOf="@id/tvteam"
+                        android:gravity="start"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+                <!--End-->
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>
